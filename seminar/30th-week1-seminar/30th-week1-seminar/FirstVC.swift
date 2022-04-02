@@ -15,18 +15,21 @@ class FirstVC: UIViewController {
     }
   }
 
+  @IBOutlet weak var dataTextField: UITextField!
   
   override func viewDidLoad() {
         super.viewDidLoad()
     }
     
   @IBAction func gotoSecondVC(_ sender: Any) {
-    guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") else {return}
+    guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") as? SecondVC else {return}
     
     nextVC.modalPresentationStyle = .pageSheet
     nextVC.modalTransitionStyle = .crossDissolve
+    nextVC.message = dataTextField.text
     
     self.present(nextVC, animated: true, completion: nil)
   }
+
   
 }

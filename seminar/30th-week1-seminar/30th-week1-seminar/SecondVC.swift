@@ -9,10 +9,22 @@ import UIKit
 
 class SecondVC: UIViewController {
 
-    override func viewDidLoad() {
+  @IBOutlet weak var dataLabel: UILabel!
+  var message: String?
+  
+  
+  override func viewDidLoad() {
         super.viewDidLoad()
+    setMessage()
     }
     
+  private func setMessage() {
+    if let message = message {
+      dataLabel.text = message
+      dataLabel.sizeToFit()
+    }
+  }
+  
   @IBAction func backButtonDidTap(_ sender: Any) {
     self.dismiss(animated: true, completion: nil)
   }
