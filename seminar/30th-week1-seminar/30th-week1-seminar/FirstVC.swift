@@ -9,21 +9,24 @@ import UIKit
 
 class FirstVC: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  @IBOutlet weak var presentBtn: UIButton!{
+    didSet {
+      presentBtn.layer.cornerRadius = 15
+    }
+  }
 
-        // Do any additional setup after loading the view.
+  
+  override func viewDidLoad() {
+        super.viewDidLoad()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  @IBAction func gotoSecondVC(_ sender: Any) {
+    guard let nextVC = self.storyboard?.instantiateViewController(withIdentifier: "SecondVC") else {return}
+    
+    nextVC.modalPresentationStyle = .pageSheet
+    nextVC.modalTransitionStyle = .crossDissolve
+    
+    self.present(nextVC, animated: true, completion: nil)
+  }
+  
 }

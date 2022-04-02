@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F20FA7D027F8323C008EBDD0 /* FirstVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FA7CF27F8323C008EBDD0 /* FirstVC.swift */; };
+		F20FA7D227F8324A008EBDD0 /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F20FA7D127F8324A008EBDD0 /* SecondVC.swift */; };
 		F2D0D18F27F81B25005DDCB2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D18E27F81B25005DDCB2 /* AppDelegate.swift */; };
 		F2D0D19127F81B25005DDCB2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D19027F81B25005DDCB2 /* SceneDelegate.swift */; };
 		F2D0D19327F81B25005DDCB2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D0D19227F81B25005DDCB2 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F20FA7CF27F8323C008EBDD0 /* FirstVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstVC.swift; sourceTree = "<group>"; };
+		F20FA7D127F8324A008EBDD0 /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 		F2D0D18B27F81B25005DDCB2 /* 30th-week1-seminar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "30th-week1-seminar.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2D0D18E27F81B25005DDCB2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2D0D19027F81B25005DDCB2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 				F2D0D19727F81B28005DDCB2 /* Assets.xcassets */,
 				F2D0D19927F81B28005DDCB2 /* LaunchScreen.storyboard */,
 				F2D0D19C27F81B28005DDCB2 /* Info.plist */,
+				F20FA7CF27F8323C008EBDD0 /* FirstVC.swift */,
+				F20FA7D127F8324A008EBDD0 /* SecondVC.swift */,
 			);
 			path = "30th-week1-seminar";
 			sourceTree = "<group>";
@@ -139,6 +145,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2D0D19327F81B25005DDCB2 /* ViewController.swift in Sources */,
+				F20FA7D227F8324A008EBDD0 /* SecondVC.swift in Sources */,
+				F20FA7D027F8323C008EBDD0 /* FirstVC.swift in Sources */,
 				F2D0D18F27F81B25005DDCB2 /* AppDelegate.swift in Sources */,
 				F2D0D19127F81B25005DDCB2 /* SceneDelegate.swift in Sources */,
 			);
