@@ -10,6 +10,7 @@ import AVFoundation
 
 class ViewController: UIViewController {
   
+  @IBOutlet weak var helloImageView: UIImageView!
   @IBOutlet weak var messageLabel: UILabel!
   
   override func viewDidLoad() {
@@ -23,7 +24,7 @@ class ViewController: UIViewController {
   
   @IBAction func doneButtonDidTap(_ sender: Any) {
     messageLabel.text = "은주야 사랑행"
-    messageLabel.textColor = .green
+    messageLabel.textColor = .yellow
     messageLabel.sizeToFit()
     AudioServicesPlayAlertSound(SystemSoundID(1307))
   }
