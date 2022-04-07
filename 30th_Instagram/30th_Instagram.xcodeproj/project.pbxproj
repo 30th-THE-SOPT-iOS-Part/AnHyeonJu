@@ -14,6 +14,27 @@
 		F275BC1027FF5FB200145181 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F275BC0E27FF5FB200145181 /* Main.storyboard */; };
 		F275BC1227FF5FB500145181 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F275BC1127FF5FB500145181 /* Assets.xcassets */; };
 		F275BC1527FF5FB500145181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F275BC1327FF5FB500145181 /* LaunchScreen.storyboard */; };
+		F275BC2727FF650900145181 /* GenericResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC2627FF650900145181 /* GenericResponse.swift */; };
+		F275BC2B27FF657400145181 /* BaseAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC2A27FF657400145181 /* BaseAPI.swift */; };
+		F275BC2D27FF658000145181 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC2C27FF658000145181 /* Config.swift */; };
+		F275BC2F27FF658F00145181 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC2E27FF658F00145181 /* ResponseObject.swift */; };
+		F275BC3127FF667E00145181 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC3027FF667E00145181 /* BaseService.swift */; };
+		F275BC3527FF676E00145181 /* makeVibrate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC3427FF676E00145181 /* makeVibrate.swift */; };
+		F275BC3727FF679200145181 /* calculateTopInset.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC3627FF679200145181 /* calculateTopInset.swift */; };
+		F275BC3927FF67B800145181 /* addToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC3827FF67B800145181 /* addToolBar.swift */; };
+		F275BC3B27FF67DE00145181 /* calculatePastTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC3A27FF67DE00145181 /* calculatePastTime.swift */; };
+		F275BC4027FF686D00145181 /* pressAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC3F27FF686D00145181 /* pressAction.swift */; };
+		F275BC4227FF688500145181 /* getClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC4127FF688500145181 /* getClassName.swift */; };
+		F275BC4A27FF695A00145181 /* showToastMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC4927FF695A00145181 /* showToastMessage.swift */; };
+		F275BC4C27FF69CE00145181 /* ColorLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC4B27FF69CE00145181 /* ColorLiterals.swift */; };
+		F275BC4E27FF6A0400145181 /* StringLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC4D27FF6A0400145181 /* StringLiterals.swift */; };
+		F275BC5027FF6A3C00145181 /* ImageLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC4F27FF6A3C00145181 /* ImageLiterals.swift */; };
+		F275BC5327FF6A8400145181 /* StoryboardLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC5227FF6A8400145181 /* StoryboardLiterals.swift */; };
+		F275BC5A27FF6B8700145181 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F275BC5927FF6B8700145181 /* Colors.xcassets */; };
+		F275BC5C27FF6BD500145181 /* addSubViewFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC5B27FF6BD500145181 /* addSubViewFromNib.swift */; };
+		F275BC5E27FF6BF600145181 /* controllerFromStoryboard + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC5D27FF6BF600145181 /* controllerFromStoryboard + UIViewController.swift */; };
+		F275BC6027FF6C1000145181 /* successCatch + Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC5F27FF6C1000145181 /* successCatch + Result.swift */; };
+		F275BC6227FF6C3500145181 /* setTextLineHeight + UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC6127FF6C3500145181 /* setTextLineHeight + UILabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +49,27 @@
 		F275BC1127FF5FB500145181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F275BC1427FF5FB500145181 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F275BC1627FF5FB500145181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F275BC2627FF650900145181 /* GenericResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericResponse.swift; sourceTree = "<group>"; };
+		F275BC2A27FF657400145181 /* BaseAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPI.swift; sourceTree = "<group>"; };
+		F275BC2C27FF658000145181 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F275BC2E27FF658F00145181 /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
+		F275BC3027FF667E00145181 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		F275BC3427FF676E00145181 /* makeVibrate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeVibrate.swift; sourceTree = "<group>"; };
+		F275BC3627FF679200145181 /* calculateTopInset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculateTopInset.swift; sourceTree = "<group>"; };
+		F275BC3827FF67B800145181 /* addToolBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addToolBar.swift; sourceTree = "<group>"; };
+		F275BC3A27FF67DE00145181 /* calculatePastTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calculatePastTime.swift; sourceTree = "<group>"; };
+		F275BC3F27FF686D00145181 /* pressAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pressAction.swift; sourceTree = "<group>"; };
+		F275BC4127FF688500145181 /* getClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getClassName.swift; sourceTree = "<group>"; };
+		F275BC4927FF695A00145181 /* showToastMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showToastMessage.swift; sourceTree = "<group>"; };
+		F275BC4B27FF69CE00145181 /* ColorLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorLiterals.swift; sourceTree = "<group>"; };
+		F275BC4D27FF6A0400145181 /* StringLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiterals.swift; sourceTree = "<group>"; };
+		F275BC4F27FF6A3C00145181 /* ImageLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLiterals.swift; sourceTree = "<group>"; };
+		F275BC5227FF6A8400145181 /* StoryboardLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardLiterals.swift; sourceTree = "<group>"; };
+		F275BC5927FF6B8700145181 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		F275BC5B27FF6BD500145181 /* addSubViewFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addSubViewFromNib.swift; sourceTree = "<group>"; };
+		F275BC5D27FF6BF600145181 /* controllerFromStoryboard + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "controllerFromStoryboard + UIViewController.swift"; sourceTree = "<group>"; };
+		F275BC5F27FF6C1000145181 /* successCatch + Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "successCatch + Result.swift"; sourceTree = "<group>"; };
+		F275BC6127FF6C3500145181 /* setTextLineHeight + UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "setTextLineHeight + UILabel.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +90,6 @@
 				55183FC4FE0DC999803F4788 /* Pods-30th_Instagram.debug.xcconfig */,
 				D04D7EA948A79FB9DFD31237 /* Pods-30th_Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -73,15 +114,132 @@
 		F275BC0727FF5FB200145181 /* 30th_Instagram */ = {
 			isa = PBXGroup;
 			children = (
-				F275BC0827FF5FB200145181 /* AppDelegate.swift */,
-				F275BC0A27FF5FB200145181 /* SceneDelegate.swift */,
-				F275BC0C27FF5FB200145181 /* ViewController.swift */,
-				F275BC0E27FF5FB200145181 /* Main.storyboard */,
-				F275BC1127FF5FB500145181 /* Assets.xcassets */,
-				F275BC1327FF5FB500145181 /* LaunchScreen.storyboard */,
+				F275BC1D27FF631C00145181 /* Global */,
+				F275BC1C27FF630A00145181 /* Screen */,
 				F275BC1627FF5FB500145181 /* Info.plist */,
 			);
 			path = 30th_Instagram;
+			sourceTree = "<group>";
+		};
+		F275BC1C27FF630A00145181 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC6527FF6CDD00145181 /* Login */,
+				F275BC0E27FF5FB200145181 /* Main.storyboard */,
+				F275BC0C27FF5FB200145181 /* ViewController.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		F275BC1D27FF631C00145181 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC2527FF641400145181 /* Supporting Files */,
+				F275BC1E27FF63E200145181 /* Model */,
+				F275BC1F27FF63E700145181 /* Network */,
+				F275BC2027FF63EF00145181 /* Utils */,
+				F275BC2127FF63F600145181 /* Literals */,
+				F275BC2327FF640600145181 /* Resource */,
+				F275BC2427FF640C00145181 /* Extension */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		F275BC1E27FF63E200145181 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC2627FF650900145181 /* GenericResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F275BC1F27FF63E700145181 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC2827FF655600145181 /* Service */,
+				F275BC2A27FF657400145181 /* BaseAPI.swift */,
+				F275BC2C27FF658000145181 /* Config.swift */,
+				F275BC2E27FF658F00145181 /* ResponseObject.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F275BC2027FF63EF00145181 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC3427FF676E00145181 /* makeVibrate.swift */,
+				F275BC3627FF679200145181 /* calculateTopInset.swift */,
+				F275BC3827FF67B800145181 /* addToolBar.swift */,
+				F275BC3A27FF67DE00145181 /* calculatePastTime.swift */,
+				F275BC3F27FF686D00145181 /* pressAction.swift */,
+				F275BC4127FF688500145181 /* getClassName.swift */,
+				F275BC4927FF695A00145181 /* showToastMessage.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		F275BC2127FF63F600145181 /* Literals */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC4B27FF69CE00145181 /* ColorLiterals.swift */,
+				F275BC4D27FF6A0400145181 /* StringLiterals.swift */,
+				F275BC4F27FF6A3C00145181 /* ImageLiterals.swift */,
+				F275BC5227FF6A8400145181 /* StoryboardLiterals.swift */,
+			);
+			path = Literals;
+			sourceTree = "<group>";
+		};
+		F275BC2327FF640600145181 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC5827FF6B1E00145181 /* Fonts */,
+				F275BC1127FF5FB500145181 /* Assets.xcassets */,
+				F275BC5927FF6B8700145181 /* Colors.xcassets */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		F275BC2427FF640C00145181 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC5F27FF6C1000145181 /* successCatch + Result.swift */,
+				F275BC5D27FF6BF600145181 /* controllerFromStoryboard + UIViewController.swift */,
+				F275BC5B27FF6BD500145181 /* addSubViewFromNib.swift */,
+				F275BC6127FF6C3500145181 /* setTextLineHeight + UILabel.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F275BC2527FF641400145181 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC0827FF5FB200145181 /* AppDelegate.swift */,
+				F275BC0A27FF5FB200145181 /* SceneDelegate.swift */,
+				F275BC1327FF5FB500145181 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F275BC2827FF655600145181 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC3027FF667E00145181 /* BaseService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F275BC5827FF6B1E00145181 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		F275BC6527FF6CDD00145181 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		FE51D548CBF9B137F5780FDE /* Frameworks */ = {
@@ -153,6 +311,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F275BC1527FF5FB500145181 /* LaunchScreen.storyboard in Resources */,
+				F275BC5A27FF6B8700145181 /* Colors.xcassets in Resources */,
 				F275BC1227FF5FB500145181 /* Assets.xcassets in Resources */,
 				F275BC1027FF5FB200145181 /* Main.storyboard in Resources */,
 			);
@@ -207,9 +366,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F275BC3127FF667E00145181 /* BaseService.swift in Sources */,
+				F275BC5327FF6A8400145181 /* StoryboardLiterals.swift in Sources */,
+				F275BC3927FF67B800145181 /* addToolBar.swift in Sources */,
+				F275BC2F27FF658F00145181 /* ResponseObject.swift in Sources */,
+				F275BC3B27FF67DE00145181 /* calculatePastTime.swift in Sources */,
+				F275BC3727FF679200145181 /* calculateTopInset.swift in Sources */,
+				F275BC2727FF650900145181 /* GenericResponse.swift in Sources */,
+				F275BC6227FF6C3500145181 /* setTextLineHeight + UILabel.swift in Sources */,
+				F275BC4A27FF695A00145181 /* showToastMessage.swift in Sources */,
+				F275BC4227FF688500145181 /* getClassName.swift in Sources */,
+				F275BC5C27FF6BD500145181 /* addSubViewFromNib.swift in Sources */,
 				F275BC0D27FF5FB200145181 /* ViewController.swift in Sources */,
+				F275BC6027FF6C1000145181 /* successCatch + Result.swift in Sources */,
 				F275BC0927FF5FB200145181 /* AppDelegate.swift in Sources */,
+				F275BC4027FF686D00145181 /* pressAction.swift in Sources */,
+				F275BC3527FF676E00145181 /* makeVibrate.swift in Sources */,
+				F275BC5E27FF6BF600145181 /* controllerFromStoryboard + UIViewController.swift in Sources */,
 				F275BC0B27FF5FB200145181 /* SceneDelegate.swift in Sources */,
+				F275BC5027FF6A3C00145181 /* ImageLiterals.swift in Sources */,
+				F275BC4C27FF69CE00145181 /* ColorLiterals.swift in Sources */,
+				F275BC2B27FF657400145181 /* BaseAPI.swift in Sources */,
+				F275BC2D27FF658000145181 /* Config.swift in Sources */,
+				F275BC4E27FF6A0400145181 /* StringLiterals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
