@@ -7,5 +7,6 @@ target '30th_Instagram' do
 
   # Pods for 30th_Instagram
   pod 'SnapKit', '~> 5.0.0'
+  pod 'Then'
 
 end
