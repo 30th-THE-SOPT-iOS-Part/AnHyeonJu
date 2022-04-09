@@ -1,19 +1,34 @@
 //
-//  ViewController.swift
+//  LoginVC.swift
 //  30th_Instagram
 //
-//  Created by 안현주 on 2022/04/08.
+//  Created by 안현주 on 2022/04/10.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
-  
-  override func viewDidLoad() {
-    super.viewDidLoad()
-    // Do any additional setup after loading the view.
-  }
-  
-  
-}
+class LoginVC: UIViewController {
 
+  // MARK: - Vars & Lets Part
+
+
+  // MARK: - UI Component Part
+
+  
+  // MARK: - Life Cycle Part
+  
+    override func viewDidLoad() {
+        super.viewDidLoad()
+         
+    }
+    
+  // MARK: - IBAction Part
+
+  
+  // MARK: - Custom Method Part
+
+  
+  // MARK: - @objc Function Part
+
+}
+// MARK: - Extension Part
