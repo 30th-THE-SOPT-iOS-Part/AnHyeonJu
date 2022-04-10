@@ -74,7 +74,11 @@
                                 <state key="normal" title="가입하기"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVA-zg-NBi">
-                                <rect key="frame" x="321" y="393.66666666666669" width="44" height="34"/>
+                                <rect key="frame" x="335" y="400.66666666666669" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="9bP-Vb-HcB"/>
+                                    <constraint firstAttribute="height" constant="20" id="VQb-qZ-98u"/>
+                                </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="password hidden eye icon"/>
                             </button>
@@ -88,7 +92,7 @@
                             <constraint firstItem="26B-i6-nmd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="FqG-e3-26M"/>
                             <constraint firstItem="6u7-NF-ZEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hsi-9u-PLL"/>
                             <constraint firstItem="5hZ-sl-7lx" firstAttribute="leading" secondItem="26B-i6-nmd" secondAttribute="trailing" constant="2" id="INP-nX-IZf"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oVA-zg-NBi" secondAttribute="trailing" constant="10" id="KL8-8W-Xw8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oVA-zg-NBi" secondAttribute="trailing" constant="20" id="KL8-8W-Xw8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZfW-eH-IBQ" secondAttribute="trailing" constant="16" id="Nih-Fo-Kn7"/>
                             <constraint firstItem="YWI-pm-UIr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PyW-Mb-6MM"/>
                             <constraint firstItem="EUY-FW-oYh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vll-ky-8gV"/>

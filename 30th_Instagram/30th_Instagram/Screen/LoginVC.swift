@@ -47,7 +47,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     [idTextField, pwTextField].forEach{
       $0?.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
-    
   }
   
   private func initialize() {
@@ -80,12 +79,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     eyeBtn.press { [self] in
       eyeBtn.isSelected.toggle()
       if eyeBtn.isSelected {
+        eyeBtn.backgroundColor = .clear
         eyeBtn.setImage(UIImage(named: "password shown eye icon"), for: .normal)
-
         pwTextField.isSecureTextEntry = false
       } else {
+        eyeBtn.backgroundColor = .clear
         eyeBtn.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
-
         pwTextField.isSecureTextEntry = true
       }
       
