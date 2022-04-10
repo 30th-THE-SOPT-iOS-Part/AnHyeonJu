@@ -44,6 +44,8 @@ class LoginVC: UIViewController {
   // MARK: - Custom Method Part
   private func setUI() {
     loginBtn.layer.cornerRadius = 5
+    idTextField.clearButtonMode = .whileEditing
+    idTextField.clearsOnBeginEditing = true
   }
   
   private func setTextField() {
