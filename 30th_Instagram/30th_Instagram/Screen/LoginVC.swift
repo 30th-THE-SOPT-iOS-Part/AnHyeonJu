@@ -10,26 +10,19 @@ import UIKit
 class LoginVC: UIViewController, UITextFieldDelegate {
   
   // MARK: - Vars & Lets Part
-  private let eyeBtn = UIButton()
-  private let hiddenImage = UIImage(named: "password hidden eye icon")
-  private let shownImage = UIImage(named: "password shown eye icon")
-  
+
   // MARK: - UI Component Part
   @IBOutlet weak var idTextField: UITextField!
   @IBOutlet weak var pwTextField: UITextField!
-  @IBOutlet weak var loginBtn: UIButton!{
-    didSet{
-      loginBtn.isEnabled = false
-      loginBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
-    }
-  }
+  @IBOutlet weak var loginBtn: UIButton!
   @IBOutlet weak var signUpBtn: UIButton!
+  @IBOutlet weak var eyeBtn: UIButton!
   
   // MARK: - Life Cycle Part
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    setTextFieldEmpty()
+    initialize()
   }
   
   override func viewDidLoad() {
@@ -54,15 +47,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     [idTextField, pwTextField].forEach{
       $0?.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
-
-    eyeBtn.setBackgroundImage(hiddenImage, for: .normal)
-    eyeBtn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
-    pwTextField.rightView = eyeBtn
-    pwTextField.rightViewMode = .always
-    pwTextField.delegate = self
+    
   }
   
-  private func setTextFieldEmpty() {
+  private func initialize() {
+    loginBtn.isEnabled = false
+    loginBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
+
     [idTextField, pwTextField].forEach {
       $0.text = ""
     }
@@ -88,14 +79,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     //Clicked
     eyeBtn.press { [self] in
       eyeBtn.isSelected.toggle()
-      
       if eyeBtn.isSelected {
-        eyeBtn.setBackgroundImage(shownImage, for: .normal)
-        pwTextField.rightView = eyeBtn
+        eyeBtn.setImage(UIImage(named: "password shown eye icon"), for: .normal)
+
         pwTextField.isSecureTextEntry = false
       } else {
-        eyeBtn.setBackgroundImage(hiddenImage, for: .normal)
-        pwTextField.rightView = eyeBtn
+        eyeBtn.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
+
         pwTextField.isSecureTextEntry = true
       }
       

@@ -14,18 +14,13 @@ class SignUpPwVC: UIViewController {
   
   // MARK: - UI Component Part
   @IBOutlet weak var pwTextField: UITextField!
-  @IBOutlet weak var nextBtn: UIButton!{
-    didSet{
-      nextBtn.isEnabled = false
-      nextBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
-    }
-  }
+  @IBOutlet weak var nextBtn: UIButton!
   
   
   // MARK: - Life Cycle Part
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
-    setTextFieldEmpty()
+    initialize()
   }
   
   override func viewDidLoad() {
@@ -50,7 +45,10 @@ class SignUpPwVC: UIViewController {
     pwTextField.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
   }
   
-  private func setTextFieldEmpty() {
+  private func initialize() {
+    nextBtn.isEnabled = false
+    nextBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
+    
     pwTextField.text = ""
   }
   

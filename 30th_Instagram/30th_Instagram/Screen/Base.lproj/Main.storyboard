@@ -73,6 +73,11 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="가입하기"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVA-zg-NBi">
+                                <rect key="frame" x="315" y="393.66666666666669" width="44" height="34"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="password hidden eye icon"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -83,6 +88,7 @@
                             <constraint firstItem="26B-i6-nmd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="FqG-e3-26M"/>
                             <constraint firstItem="6u7-NF-ZEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hsi-9u-PLL"/>
                             <constraint firstItem="5hZ-sl-7lx" firstAttribute="leading" secondItem="26B-i6-nmd" secondAttribute="trailing" constant="2" id="INP-nX-IZf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oVA-zg-NBi" secondAttribute="trailing" constant="16" id="KL8-8W-Xw8"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZfW-eH-IBQ" secondAttribute="trailing" constant="16" id="Nih-Fo-Kn7"/>
                             <constraint firstItem="YWI-pm-UIr" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="PyW-Mb-6MM"/>
                             <constraint firstItem="EUY-FW-oYh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vll-ky-8gV"/>
@@ -93,11 +99,13 @@
                             <constraint firstItem="5hZ-sl-7lx" firstAttribute="top" secondItem="MOa-F6-nvE" secondAttribute="bottom" constant="30" id="oqV-uF-Typ"/>
                             <constraint firstItem="6u7-NF-ZEC" firstAttribute="top" secondItem="YWI-pm-UIr" secondAttribute="bottom" constant="30" id="svM-YF-emO"/>
                             <constraint firstItem="MOa-F6-nvE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vXW-dQ-miZ"/>
+                            <constraint firstItem="oVA-zg-NBi" firstAttribute="centerY" secondItem="EUY-FW-oYh" secondAttribute="centerY" id="wVb-bv-jym"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EUY-FW-oYh" secondAttribute="trailing" constant="16" id="xlu-Ve-Mrr"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="bw8-dM-SvC"/>
                     <connections>
+                        <outlet property="eyeBtn" destination="oVA-zg-NBi" id="lGI-2a-hLh"/>
                         <outlet property="idTextField" destination="6u7-NF-ZEC" id="mDI-0z-ech"/>
                         <outlet property="loginBtn" destination="MOa-F6-nvE" id="wxv-di-Qjd"/>
                         <outlet property="pwTextField" destination="EUY-FW-oYh" id="bjs-Pd-0xa"/>
@@ -317,6 +325,7 @@
     </scenes>
     <resources>
         <image name="Instagram_icn" width="175" height="50"/>
+        <image name="password hidden eye icon" width="20" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
