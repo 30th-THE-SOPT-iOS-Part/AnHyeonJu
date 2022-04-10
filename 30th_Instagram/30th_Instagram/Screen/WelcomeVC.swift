@@ -34,7 +34,7 @@ class WelcomeVC: UIViewController {
   
   private func setUserName() {
     if let userName = userName {
-      welcomeLabel.text = userName + "님, Instagram에 /n오신것을 환영합니다."
+      welcomeLabel.text = userName + "님, Instagram에 \n오신것을 환영합니다."
       welcomeLabel.sizeToFit()
     }
   }

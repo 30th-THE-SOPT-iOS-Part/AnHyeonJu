@@ -51,6 +51,7 @@ class LoginVC: UIViewController {
       $0?.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
   }
+  
   private func setTextFieldEmpty() {
     [idTextField, pwTextField].forEach {
       $0.text = ""
@@ -84,5 +85,6 @@ class LoginVC: UIViewController {
       loginBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
     }
   }
+  
 }
 // MARK: - Extension Part

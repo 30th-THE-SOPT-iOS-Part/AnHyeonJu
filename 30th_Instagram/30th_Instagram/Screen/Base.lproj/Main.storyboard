@@ -168,6 +168,10 @@
                             <constraint firstItem="c4R-d1-QMl" firstAttribute="centerX" secondItem="QSl-RJ-uoh" secondAttribute="centerX" id="wHK-HX-bL0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="HEY-jB-mLp" id="4Ie-t6-HFd"/>
+                        <outlet property="nickNameTextField" destination="6GZ-8N-w9G" id="Wrj-Ia-UGp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xaZ-6O-Uoe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -215,11 +219,6 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cTs-Oe-Yaw">
-                                <rect key="frame" x="16" y="48" width="25" height="24"/>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="back_icn"/>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tjA-ky-6ng"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -229,15 +228,17 @@
                             <constraint firstItem="xec-Et-R0Z" firstAttribute="top" secondItem="4wJ-9n-ATM" secondAttribute="bottom" constant="16" id="Nxy-qU-eGR"/>
                             <constraint firstItem="xec-Et-R0Z" firstAttribute="leading" secondItem="tjA-ky-6ng" secondAttribute="leading" constant="16" id="QU1-by-114"/>
                             <constraint firstItem="3Hn-vG-hAS" firstAttribute="centerX" secondItem="tjA-ky-6ng" secondAttribute="centerX" id="R0s-GC-X4g"/>
-                            <constraint firstItem="cTs-Oe-Yaw" firstAttribute="top" secondItem="tjA-ky-6ng" secondAttribute="top" constant="4" id="UXI-4H-jWK"/>
                             <constraint firstItem="4wJ-9n-ATM" firstAttribute="top" secondItem="I4d-1W-qHl" secondAttribute="bottom" constant="25" id="W7D-bb-dHg"/>
                             <constraint firstItem="tjA-ky-6ng" firstAttribute="trailing" secondItem="xec-Et-R0Z" secondAttribute="trailing" constant="16" id="Zeg-dE-rYG"/>
-                            <constraint firstItem="cTs-Oe-Yaw" firstAttribute="leading" secondItem="tjA-ky-6ng" secondAttribute="leading" constant="16" id="dfQ-tR-bim"/>
                             <constraint firstItem="tjA-ky-6ng" firstAttribute="trailing" secondItem="4wJ-9n-ATM" secondAttribute="trailing" constant="16" id="hXF-k7-m3A"/>
                             <constraint firstItem="3Hn-vG-hAS" firstAttribute="top" secondItem="tjA-ky-6ng" secondAttribute="top" constant="60" id="mU6-E8-Bqb"/>
                             <constraint firstItem="I4d-1W-qHl" firstAttribute="top" secondItem="3Hn-vG-hAS" secondAttribute="bottom" constant="15" id="wxs-ue-nPR"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="xec-Et-R0Z" id="cZg-j7-EzL"/>
+                        <outlet property="pwTextField" destination="4wJ-9n-ATM" id="vgC-fj-bLO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zwV-1n-3l1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -318,7 +319,6 @@
     </scenes>
     <resources>
         <image name="Instagram_icn" width="175" height="50"/>
-        <image name="back_icn" width="24.333333969116211" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
