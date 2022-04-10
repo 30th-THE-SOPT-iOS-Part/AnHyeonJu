@@ -19,14 +19,19 @@ class SignUpNickNameVC: UIViewController {
   
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+      setUI()
     }
     
   // MARK: - IBAction Part
 
   
   // MARK: - Custom Method Part
+  private func setUI() {
+//    loginBtn.layer.cornerRadius = 5
+    self.navigationController?.navigationBar.topItem?.title = ""
+    self.navigationController?.navigationBar.tintColor = .black
 
+  }
   
   // MARK: - @objc Function Part
 
