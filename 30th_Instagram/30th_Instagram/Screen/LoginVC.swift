@@ -7,10 +7,12 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate {
   
   // MARK: - Vars & Lets Part
-  
+  private let eyeBtn = UIButton()
+  private let hiddenImage = UIImage(named: "password hidden eye icon")
+  private let shownImage = UIImage(named: "password shown eye icon")
   
   // MARK: - UI Component Part
   @IBOutlet weak var idTextField: UITextField!
@@ -52,6 +54,12 @@ class LoginVC: UIViewController {
     [idTextField, pwTextField].forEach{
       $0?.addTarget(self, action: #selector(textFieldDidChange), for: .editingChanged)
     }
+
+    eyeBtn.setBackgroundImage(hiddenImage, for: .normal)
+    eyeBtn.frame = CGRect(x: 0,y: 0,width: 30,height: 30)
+    pwTextField.rightView = eyeBtn
+    pwTextField.rightViewMode = .always
+    pwTextField.delegate = self
   }
   
   private func setTextFieldEmpty() {
@@ -75,6 +83,22 @@ class LoginVC: UIViewController {
       guard let signUpVC =  self.storyboard?.instantiateViewController(withIdentifier: "SignUpNickNameVC")  else {return}
       
       self.navigationController?.pushViewController(signUpVC, animated: true)
+    }
+    
+    //Clicked
+    eyeBtn.press { [self] in
+      eyeBtn.isSelected.toggle()
+      
+      if eyeBtn.isSelected {
+        eyeBtn.setBackgroundImage(shownImage, for: .normal)
+        pwTextField.rightView = eyeBtn
+        pwTextField.isSecureTextEntry = false
+      } else {
+        eyeBtn.setBackgroundImage(hiddenImage, for: .normal)
+        pwTextField.rightView = eyeBtn
+        pwTextField.isSecureTextEntry = true
+      }
+      
     }
   }
   
