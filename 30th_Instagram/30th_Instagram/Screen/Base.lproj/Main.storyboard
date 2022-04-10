@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,22 +13,107 @@
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="BYZ-38-t0r" customClass="LoginVC" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Instagram_icn" translatesAutoresizingMaskIntoConstraints="NO" id="YWI-pm-UIr">
+                                <rect key="frame" x="87" y="194" width="201" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="bjA-rr-yw4"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="전화번호, 사용자 이름 또는 이메일" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6u7-NF-ZEC">
+                                <rect key="frame" x="16" y="289" width="343" height="45"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="kSJ-VC-11e"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="비밀번호" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EUY-FW-oYh">
+                                <rect key="frame" x="16" y="344" width="343" height="45"/>
+                                <color key="backgroundColor" red="0.98039215686274506" green="0.98039215686274506" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="45" id="gX6-bW-b8M"/>
+                                </constraints>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfW-eH-IBQ">
+                                <rect key="frame" x="239" y="405" width="120" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="iUu-HD-adf"/>
+                                    <constraint firstAttribute="width" constant="120" id="rmD-BE-Okd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="비밀번호를 잊으셨나요?"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOa-F6-nvE">
+                                <rect key="frame" x="16" y="457" width="343" height="45"/>
+                                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="cto-t2-qJc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="로그인">
+                                    <color key="titleColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계정이 없으신가요?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26B-i6-nmd">
+                                <rect key="frame" x="116" y="532" width="108" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hZ-sl-7lx">
+                                <rect key="frame" x="226" y="532" width="49" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="sfE-Nv-1UE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="가입하기"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="MOa-F6-nvE" firstAttribute="top" secondItem="ZfW-eH-IBQ" secondAttribute="bottom" constant="30" id="1Xg-rT-mws"/>
+                            <constraint firstItem="YWI-pm-UIr" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="2dN-J2-dPU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MOa-F6-nvE" secondAttribute="trailing" constant="16" id="3ad-bt-34g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="YWI-pm-UIr" secondAttribute="trailing" constant="87" id="BNJ-1t-seg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6u7-NF-ZEC" secondAttribute="trailing" constant="16" id="CBj-nJ-rr5"/>
+                            <constraint firstItem="26B-i6-nmd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="116" id="FqG-e3-26M"/>
+                            <constraint firstItem="6u7-NF-ZEC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Hsi-9u-PLL"/>
+                            <constraint firstItem="5hZ-sl-7lx" firstAttribute="leading" secondItem="26B-i6-nmd" secondAttribute="trailing" constant="2" id="INP-nX-IZf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZfW-eH-IBQ" secondAttribute="trailing" constant="16" id="Nih-Fo-Kn7"/>
+                            <constraint firstItem="EUY-FW-oYh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vll-ky-8gV"/>
+                            <constraint firstItem="EUY-FW-oYh" firstAttribute="top" secondItem="6u7-NF-ZEC" secondAttribute="bottom" constant="10" id="Wb8-v8-beS"/>
+                            <constraint firstItem="YWI-pm-UIr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="150" id="aOz-Ek-Ju2"/>
+                            <constraint firstItem="ZfW-eH-IBQ" firstAttribute="top" secondItem="EUY-FW-oYh" secondAttribute="bottom" constant="16" id="ewh-bS-8Ne"/>
+                            <constraint firstItem="26B-i6-nmd" firstAttribute="top" secondItem="MOa-F6-nvE" secondAttribute="bottom" constant="30" id="mXR-qG-ZPM"/>
+                            <constraint firstItem="5hZ-sl-7lx" firstAttribute="top" secondItem="MOa-F6-nvE" secondAttribute="bottom" constant="30" id="oqV-uF-Typ"/>
+                            <constraint firstItem="6u7-NF-ZEC" firstAttribute="top" secondItem="YWI-pm-UIr" secondAttribute="bottom" constant="30" id="svM-YF-emO"/>
+                            <constraint firstItem="MOa-F6-nvE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="vXW-dQ-miZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EUY-FW-oYh" secondAttribute="trailing" constant="16" id="xlu-Ve-Mrr"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="33" y="97"/>
+            <point key="canvasLocation" x="31.199999999999999" y="96.059113300492612"/>
         </scene>
         <!--Sign Up Nick NameVC-->
         <scene sceneID="Xdm-kj-qm3">
             <objects>
                 <viewController storyboardIdentifier="SignUpNickNameVC" id="AW9-nP-EOx" customClass="SignUpNickNameVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BCn-zj-6hh">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="mb1-sH-JtS"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -43,7 +128,7 @@
             <objects>
                 <viewController storyboardIdentifier="SignUpPwVC" id="CmF-dZ-8nb" customClass="SignUpPwVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s87-Cz-MYW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="tjA-ky-6ng"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -58,7 +143,7 @@
             <objects>
                 <viewController storyboardIdentifier="WelcomeVC" id="EDS-zR-H3G" customClass="WelcomeVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d6A-Nq-hqd">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="jNk-U6-eV1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -70,8 +155,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Instagram_icn" width="175" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
