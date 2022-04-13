@@ -51,7 +51,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
   
   private func initialize() {
     loginBtn.isEnabled = false
-    loginBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
+    loginBtn.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
 
     [idTextField, pwTextField].forEach {
       $0.text = ""
@@ -80,11 +80,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
       eyeBtn.isSelected.toggle()
       if eyeBtn.isSelected {
         eyeBtn.backgroundColor = .clear
-        eyeBtn.setImage(UIImage(named: "password shown eye icon"), for: .normal)
+        eyeBtn.setImage(UIImage(named: "icn_password_shown"), for: .normal)
         pwTextField.isSecureTextEntry = false
       } else {
         eyeBtn.backgroundColor = .clear
-        eyeBtn.setImage(UIImage(named: "password hidden eye icon"), for: .normal)
+        eyeBtn.setImage(UIImage(named: "icn_password_hidden"), for: .normal)
         pwTextField.isSecureTextEntry = true
       }
       
@@ -97,7 +97,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     if loginBtn.isEnabled == true {
       loginBtn.backgroundColor = .systemBlue
     } else {
-      loginBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
+      loginBtn.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
     }
   }
   

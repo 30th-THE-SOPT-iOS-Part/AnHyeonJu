@@ -47,7 +47,7 @@ class SignUpPwVC: UIViewController {
   
   private func initialize() {
     nextBtn.isEnabled = false
-    nextBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
+    nextBtn.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
     
     pwTextField.text = ""
   }
@@ -69,7 +69,7 @@ class SignUpPwVC: UIViewController {
     if nextBtn.isEnabled == true {
       nextBtn.backgroundColor = .systemBlue
     } else {
-      nextBtn.backgroundColor = UIColor(displayP3Red: 126/255, green: 192/255, blue: 250/255, alpha: 1)
+      nextBtn.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
     }
   }
 }
