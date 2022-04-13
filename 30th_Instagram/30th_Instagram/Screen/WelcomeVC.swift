@@ -15,6 +15,7 @@ class WelcomeVC: UIViewController {
   // MARK: - UI Component Part
   @IBOutlet weak var welcomeLabel: UILabel!
   @IBOutlet weak var completeBtn: UIButton!
+  @IBOutlet weak var loginBtn: UIButton!
   
   // MARK: - Life Cycle Part
   override func viewDidLoad() {
@@ -41,6 +42,10 @@ class WelcomeVC: UIViewController {
   
   private func pressBtn() {
     completeBtn.press {
+      //present 탭바
+    }
+    
+    loginBtn.press {
       self.dismiss(animated: true)
     }
   }
