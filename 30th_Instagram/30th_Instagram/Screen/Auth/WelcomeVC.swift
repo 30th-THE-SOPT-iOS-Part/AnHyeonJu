@@ -41,12 +41,18 @@ class WelcomeVC: UIViewController {
   }
   
   private func pressBtn() {
+    //Present
     completeBtn.press {
-      //present 탭바
+      let tabbar = UIStoryboard.init(name: "TabBar", bundle: nil)
+      guard let instaTBC = tabbar.instantiateViewController(withIdentifier: "InstaTBC") as? InstaTBC else {return}
+      
+      instaTBC.modalPresentationStyle = .fullScreen
+      self.present(instaTBC, animated: true, completion: nil)
     }
     
+    //Back to LoginVC
     loginBtn.press {
-      self.dismiss(animated: true)
+      self.dismiss(animated: true, completion: nil)
     }
   }
   

@@ -65,7 +65,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
       
       welcomeVC.userName = self.idTextField.text
       welcomeVC.modalPresentationStyle = .fullScreen
-      self.present(welcomeVC, animated: true, completion: nil)
+      self.present(welcomeVC, animated: true, completion: {
+        self.navigationController?.popToRootViewController(animated: true)
+      })
     }
     
     //Push

@@ -52,12 +52,14 @@ class SignUpPwVC: UIViewController {
     pwTextField.text = ""
   }
   
+  
   private func pressBtn() {
     nextBtn.press {
       guard let welcomeVC =  self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
       welcomeVC.userName = self.userName
       welcomeVC.modalPresentationStyle = .fullScreen
       self.present(welcomeVC, animated: true, completion: {
+        //2주차 심화과제 : 뷰 스택 쌓이는것 해결...!
         self.navigationController?.popToRootViewController(animated: true)
       })
     }
