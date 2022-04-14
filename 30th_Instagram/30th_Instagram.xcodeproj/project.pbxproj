@@ -106,12 +106,8 @@
 		F275BC1C27FF630A00145181 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				F2E7A29C2808894400965A17 /* Auth */,
 				F2FB7BB828000F3600B4CE85 /* Components */,
-				F275BC0E27FF5FB200145181 /* Main.storyboard */,
-				F275BC0C27FF5FB200145181 /* LoginVC.swift */,
-				F2D761472801E2A0008C2B27 /* SignUpNickNameVC.swift */,
-				F2D761492801E2BB008C2B27 /* SignUpPwVC.swift */,
-				F2D7614B2801E2CE008C2B27 /* WelcomeVC.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -173,6 +169,18 @@
 				F275BC1327FF5FB500145181 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2E7A29C2808894400965A17 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				F275BC0E27FF5FB200145181 /* Main.storyboard */,
+				F275BC0C27FF5FB200145181 /* LoginVC.swift */,
+				F2D761472801E2A0008C2B27 /* SignUpNickNameVC.swift */,
+				F2D761492801E2BB008C2B27 /* SignUpPwVC.swift */,
+				F2D7614B2801E2CE008C2B27 /* WelcomeVC.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		F2FB7BB828000F3600B4CE85 /* Components */ = {
