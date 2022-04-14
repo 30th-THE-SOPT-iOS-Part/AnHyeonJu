@@ -13,13 +13,25 @@ class InstaTBC: UITabBarController{
   // MARK: - Life Cycle Part
   override func viewDidLoad() {
     super.viewDidLoad()
+//    setRootView()
     setDelegate()
     setTBC()
     tabBarColor()
-  }
     
+  }
+  
   
   // MARK: - Custom Method Part
+//  func setRootView() {
+//
+//    let tabbar = UIStoryboard.init(name: "TabBar", bundle: nil)
+//    guard let vc = tabbar.instantiateViewController(withIdentifier: "InstaTBC") as? InstaTBC else {return}
+//
+//    let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as! SceneDelegate
+//    sceneDelegate.window?.rootViewController  = vc
+//
+//  }
+  
   func tabBarColor() {
     self.tabBar.unselectedItemTintColor = .black
   }
