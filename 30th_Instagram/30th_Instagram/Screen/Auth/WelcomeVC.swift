@@ -51,6 +51,7 @@ class WelcomeVC: UIViewController {
     }
     
     //Back to LoginVC
+    //present로  WelcomeVC를 띄운것을 dismiss
     loginBtn.press {
       self.dismiss(animated: true, completion: nil)
     }
