@@ -3,10 +3,10 @@
 <br><br>
 ### 🍎 Sopt iOS 30th 커리큘럼 🍎
 
-| 주차 | 내용 | 과제 | 리드미 |
+| 주차 | 내용 | 스보과제 | 코드과제 |
 |:------:|:------|:------:|:------:|
-|`1주차`| Xcode 기본 사용법,Layout기초, View 화면 전환|  |[📚link] |
-|`2주차`| AutoLayout, StackView, TabBarController |  | [📚link]|
+|`1주차`| Xcode 기본 사용법,Layout기초, View 화면 전환| ✔️ |  |
+|`2주차`| AutoLayout, StackView, TabBarController | ✔️ |  |
 |`3주차`| ScrollView, TableView, CollectionView |  |  |
 |`4주차`| 서버와 클라이언트 이해, RESTful API, Alamofire를 활용한 실습 |  | |
 |`5주차`| 디자인 합동 세미나 |  |  |
