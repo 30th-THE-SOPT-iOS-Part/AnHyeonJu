@@ -23,6 +23,9 @@
 		F290F6632813DF7700C76F9F /* MusicCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F6612813DF7700C76F9F /* MusicCVC.swift */; };
 		F290F6642813DF7700C76F9F /* MusicCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F290F6622813DF7700C76F9F /* MusicCVC.xib */; };
 		F290F6662813E0F000C76F9F /* AlbumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F6652813E0F000C76F9F /* AlbumDataModel.swift */; };
+		F290F66A2813E68A00C76F9F /* DelegatePractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F290F6692813E68A00C76F9F /* DelegatePractice.storyboard */; };
+		F290F66C2813E6AA00C76F9F /* DelegatePraticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F66B2813E6AA00C76F9F /* DelegatePraticeVC.swift */; };
+		F290F66E2813E8E700C76F9F /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F66D2813E8E700C76F9F /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		F290F6612813DF7700C76F9F /* MusicCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicCVC.swift; sourceTree = "<group>"; };
 		F290F6622813DF7700C76F9F /* MusicCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicCVC.xib; sourceTree = "<group>"; };
 		F290F6652813E0F000C76F9F /* AlbumDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDataModel.swift; sourceTree = "<group>"; };
+		F290F6692813E68A00C76F9F /* DelegatePractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DelegatePractice.storyboard; sourceTree = "<group>"; };
+		F290F66B2813E6AA00C76F9F /* DelegatePraticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegatePraticeVC.swift; sourceTree = "<group>"; };
+		F290F66D2813E8E700C76F9F /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +82,12 @@
 		F290F6382813C8A200C76F9F /* 30th-week3-seminar */ = {
 			isa = PBXGroup;
 			children = (
+				F290F6682813E60E00C76F9F /* Delegate */,
+				F290F6672813E60300C76F9F /* ScrollView */,
 				F290F65A2813DE7C00C76F9F /* CollectionView */,
 				F290F6512813D78E00C76F9F /* TableView */,
 				F290F6392813C8A200C76F9F /* AppDelegate.swift */,
 				F290F63B2813C8A200C76F9F /* SceneDelegate.swift */,
-				F290F63D2813C8A200C76F9F /* ViewController.swift */,
-				F290F63F2813C8A200C76F9F /* Main.storyboard */,
 				F290F6422813C8A400C76F9F /* Assets.xcassets */,
 				F290F6442813C8A400C76F9F /* LaunchScreen.storyboard */,
 				F290F6472813C8A400C76F9F /* Info.plist */,
@@ -111,6 +117,25 @@
 				F290F6652813E0F000C76F9F /* AlbumDataModel.swift */,
 			);
 			path = CollectionView;
+			sourceTree = "<group>";
+		};
+		F290F6672813E60300C76F9F /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				F290F63D2813C8A200C76F9F /* ViewController.swift */,
+				F290F63F2813C8A200C76F9F /* Main.storyboard */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		F290F6682813E60E00C76F9F /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				F290F6692813E68A00C76F9F /* DelegatePractice.storyboard */,
+				F290F66B2813E6AA00C76F9F /* DelegatePraticeVC.swift */,
+				F290F66D2813E8E700C76F9F /* SecondVC.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +196,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F290F66A2813E68A00C76F9F /* DelegatePractice.storyboard in Resources */,
 				F290F6462813C8A400C76F9F /* LaunchScreen.storyboard in Resources */,
 				F290F6642813DF7700C76F9F /* MusicCVC.xib in Resources */,
 				F290F64E2813D6F000C76F9F /* TableViewPractice.storyboard in Resources */,
@@ -194,8 +220,10 @@
 				F290F65E2813DEC600C76F9F /* CollectionViewPractiveVC.swift in Sources */,
 				F290F63C2813C8A200C76F9F /* SceneDelegate.swift in Sources */,
 				F290F6502813D76700C76F9F /* TableViewPracticeVC.swift in Sources */,
+				F290F66E2813E8E700C76F9F /* SecondVC.swift in Sources */,
 				F290F6632813DF7700C76F9F /* MusicCVC.swift in Sources */,
 				F290F6592813D88800C76F9F /* MusicDataModel.swift in Sources */,
+				F290F66C2813E6AA00C76F9F /* DelegatePraticeVC.swift in Sources */,
 				F290F6662813E0F000C76F9F /* AlbumDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

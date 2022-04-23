@@ -16,7 +16,7 @@
 					<key>UISceneDelegateClassName</key>
 					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
 					<key>UISceneStoryboardFile</key>
-					<string>CollectionViewPractice</string>
+					<string>DelegatePractice</string>
 					<key>UISceneClassName</key>
 					<string></string>
 				</dict>

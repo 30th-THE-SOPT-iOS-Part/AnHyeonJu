@@ -43,6 +43,4 @@ extension TableViewPracticeVC: UITableViewDataSource {
     
     return cell
   }
-  
-  
 }
