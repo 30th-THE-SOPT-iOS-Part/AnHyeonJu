@@ -13,6 +13,11 @@
 		F290F6412813C8A200C76F9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F290F63F2813C8A200C76F9F /* Main.storyboard */; };
 		F290F6432813C8A400C76F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F290F6422813C8A400C76F9F /* Assets.xcassets */; };
 		F290F6462813C8A400C76F9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F290F6442813C8A400C76F9F /* LaunchScreen.storyboard */; };
+		F290F64E2813D6F000C76F9F /* TableViewPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F290F64D2813D6F000C76F9F /* TableViewPractice.storyboard */; };
+		F290F6502813D76700C76F9F /* TableViewPracticeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F64F2813D76700C76F9F /* TableViewPracticeVC.swift */; };
+		F290F6562813D7E700C76F9F /* MusicTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F6542813D7E700C76F9F /* MusicTVC.swift */; };
+		F290F6572813D7E700C76F9F /* MusicTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F290F6552813D7E700C76F9F /* MusicTVC.xib */; };
+		F290F6592813D88800C76F9F /* MusicDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F290F6582813D88800C76F9F /* MusicDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		F290F6422813C8A400C76F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F290F6452813C8A400C76F9F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F290F6472813C8A400C76F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F290F64D2813D6F000C76F9F /* TableViewPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableViewPractice.storyboard; sourceTree = "<group>"; };
+		F290F64F2813D76700C76F9F /* TableViewPracticeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewPracticeVC.swift; sourceTree = "<group>"; };
+		F290F6542813D7E700C76F9F /* MusicTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicTVC.swift; sourceTree = "<group>"; };
+		F290F6552813D7E700C76F9F /* MusicTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicTVC.xib; sourceTree = "<group>"; };
+		F290F6582813D88800C76F9F /* MusicDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +66,7 @@
 		F290F6382813C8A200C76F9F /* 30th-week3-seminar */ = {
 			isa = PBXGroup;
 			children = (
+				F290F6512813D78E00C76F9F /* TableView */,
 				F290F6392813C8A200C76F9F /* AppDelegate.swift */,
 				F290F63B2813C8A200C76F9F /* SceneDelegate.swift */,
 				F290F63D2813C8A200C76F9F /* ViewController.swift */,
@@ -65,6 +76,18 @@
 				F290F6472813C8A400C76F9F /* Info.plist */,
 			);
 			path = "30th-week3-seminar";
+			sourceTree = "<group>";
+		};
+		F290F6512813D78E00C76F9F /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				F290F64D2813D6F000C76F9F /* TableViewPractice.storyboard */,
+				F290F64F2813D76700C76F9F /* TableViewPracticeVC.swift */,
+				F290F6542813D7E700C76F9F /* MusicTVC.swift */,
+				F290F6552813D7E700C76F9F /* MusicTVC.xib */,
+				F290F6582813D88800C76F9F /* MusicDataModel.swift */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +149,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F290F6462813C8A400C76F9F /* LaunchScreen.storyboard in Resources */,
+				F290F64E2813D6F000C76F9F /* TableViewPractice.storyboard in Resources */,
+				F290F6572813D7E700C76F9F /* MusicTVC.xib in Resources */,
 				F290F6432813C8A400C76F9F /* Assets.xcassets in Resources */,
 				F290F6412813C8A200C76F9F /* Main.storyboard in Resources */,
 			);
@@ -139,8 +164,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F290F63E2813C8A200C76F9F /* ViewController.swift in Sources */,
+				F290F6562813D7E700C76F9F /* MusicTVC.swift in Sources */,
 				F290F63A2813C8A200C76F9F /* AppDelegate.swift in Sources */,
 				F290F63C2813C8A200C76F9F /* SceneDelegate.swift in Sources */,
+				F290F6502813D76700C76F9F /* TableViewPracticeVC.swift in Sources */,
+				F290F6592813D88800C76F9F /* MusicDataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
