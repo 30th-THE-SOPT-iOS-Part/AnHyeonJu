@@ -1,0 +1,6 @@
+framework module Pods_30th_week4_seminar {
+  umbrella header "Pods-30th-week4-seminar-umbrella.h"
+
+  export *
+  module * { export * }
+}
