@@ -22,11 +22,11 @@
 		F2D7614C2801E2CE008C2B27 /* WelcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2D7614B2801E2CE008C2B27 /* WelcomeVC.swift */; };
 		F2E7A29F2808899400965A17 /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2E7A29E2808899400965A17 /* TabBar.storyboard */; };
 		F2E7A2A1280889E300965A17 /* InstaTBC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A0280889E300965A17 /* InstaTBC.swift */; };
-		F2E7A2A328088A1100965A17 /* RedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A228088A1100965A17 /* RedVC.swift */; };
-		F2E7A2A528088A2700965A17 /* YellowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A428088A2700965A17 /* YellowVC.swift */; };
-		F2E7A2A728088A6200965A17 /* GreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A628088A6200965A17 /* GreenVC.swift */; };
-		F2E7A2A928088A6C00965A17 /* BlueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A828088A6C00965A17 /* BlueVC.swift */; };
-		F2E7A2AB28088A7800965A17 /* PurpleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2AA28088A7800965A17 /* PurpleVC.swift */; };
+		F2E7A2A328088A1100965A17 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A228088A1100965A17 /* HomeVC.swift */; };
+		F2E7A2A528088A2700965A17 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A428088A2700965A17 /* SearchVC.swift */; };
+		F2E7A2A728088A6200965A17 /* ReelsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A628088A6200965A17 /* ReelsVC.swift */; };
+		F2E7A2A928088A6C00965A17 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A828088A6C00965A17 /* ShopVC.swift */; };
+		F2E7A2AB28088A7800965A17 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2AA28088A7800965A17 /* ProfileVC.swift */; };
 		F2FB7BBB2800101600B4CE85 /* press + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BBA2800101600B4CE85 /* press + UIButton.swift */; };
 		F2FB7BBD2800103A00B4CE85 /* makeAlert + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BBC2800103A00B4CE85 /* makeAlert + UIViewController.swift */; };
 		F2FB7BBF2800113B00B4CE85 /* getClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BBE2800113B00B4CE85 /* getClassName.swift */; };
@@ -55,11 +55,11 @@
 		F2D7614B2801E2CE008C2B27 /* WelcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeVC.swift; sourceTree = "<group>"; };
 		F2E7A29E2808899400965A17 /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 		F2E7A2A0280889E300965A17 /* InstaTBC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaTBC.swift; sourceTree = "<group>"; };
-		F2E7A2A228088A1100965A17 /* RedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedVC.swift; sourceTree = "<group>"; };
-		F2E7A2A428088A2700965A17 /* YellowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YellowVC.swift; sourceTree = "<group>"; };
-		F2E7A2A628088A6200965A17 /* GreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenVC.swift; sourceTree = "<group>"; };
-		F2E7A2A828088A6C00965A17 /* BlueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueVC.swift; sourceTree = "<group>"; };
-		F2E7A2AA28088A7800965A17 /* PurpleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurpleVC.swift; sourceTree = "<group>"; };
+		F2E7A2A228088A1100965A17 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		F2E7A2A428088A2700965A17 /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		F2E7A2A628088A6200965A17 /* ReelsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelsVC.swift; sourceTree = "<group>"; };
+		F2E7A2A828088A6C00965A17 /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
+		F2E7A2AA28088A7800965A17 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F2FB7BBA2800101600B4CE85 /* press + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "press + UIButton.swift"; sourceTree = "<group>"; };
 		F2FB7BBC2800103A00B4CE85 /* makeAlert + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "makeAlert + UIViewController.swift"; sourceTree = "<group>"; };
 		F2FB7BBE2800113B00B4CE85 /* getClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getClassName.swift; sourceTree = "<group>"; };
@@ -203,11 +203,11 @@
 			children = (
 				F2E7A29E2808899400965A17 /* TabBar.storyboard */,
 				F2E7A2A0280889E300965A17 /* InstaTBC.swift */,
-				F2E7A2A228088A1100965A17 /* RedVC.swift */,
-				F2E7A2A428088A2700965A17 /* YellowVC.swift */,
-				F2E7A2A628088A6200965A17 /* GreenVC.swift */,
-				F2E7A2A828088A6C00965A17 /* BlueVC.swift */,
-				F2E7A2AA28088A7800965A17 /* PurpleVC.swift */,
+				F2E7A2A228088A1100965A17 /* HomeVC.swift */,
+				F2E7A2A428088A2700965A17 /* SearchVC.swift */,
+				F2E7A2A628088A6200965A17 /* ReelsVC.swift */,
+				F2E7A2A828088A6C00965A17 /* ShopVC.swift */,
+				F2E7A2AA28088A7800965A17 /* ProfileVC.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
@@ -367,18 +367,18 @@
 				F2D7614A2801E2BB008C2B27 /* SignUpPwVC.swift in Sources */,
 				F2FB7BBD2800103A00B4CE85 /* makeAlert + UIViewController.swift in Sources */,
 				F2E7A2A1280889E300965A17 /* InstaTBC.swift in Sources */,
-				F2E7A2AB28088A7800965A17 /* PurpleVC.swift in Sources */,
+				F2E7A2AB28088A7800965A17 /* ProfileVC.swift in Sources */,
 				F2D7614C2801E2CE008C2B27 /* WelcomeVC.swift in Sources */,
 				F2FB7BC12800116C00B4CE85 /* keyboard + UIViewController.swift in Sources */,
 				F275BC0927FF5FB200145181 /* AppDelegate.swift in Sources */,
 				F2FB7BBF2800113B00B4CE85 /* getClassName.swift in Sources */,
-				F2E7A2A328088A1100965A17 /* RedVC.swift in Sources */,
-				F2E7A2A528088A2700965A17 /* YellowVC.swift in Sources */,
-				F2E7A2A728088A6200965A17 /* GreenVC.swift in Sources */,
+				F2E7A2A328088A1100965A17 /* HomeVC.swift in Sources */,
+				F2E7A2A528088A2700965A17 /* SearchVC.swift in Sources */,
+				F2E7A2A728088A6200965A17 /* ReelsVC.swift in Sources */,
 				F275BC0B27FF5FB200145181 /* SceneDelegate.swift in Sources */,
 				F2FB7BC42800121600B4CE85 /* UICollectionViewRegisterable.swift in Sources */,
 				F275BC5027FF6A3C00145181 /* ImageLiterals.swift in Sources */,
-				F2E7A2A928088A6C00965A17 /* BlueVC.swift in Sources */,
+				F2E7A2A928088A6C00965A17 /* ShopVC.swift in Sources */,
 				F2D761482801E2A0008C2B27 /* SignUpNickNameVC.swift in Sources */,
 				F275BC4C27FF69CE00145181 /* ColorLiterals.swift in Sources */,
 			);

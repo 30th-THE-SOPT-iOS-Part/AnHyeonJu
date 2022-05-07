@@ -42,40 +42,40 @@ class InstaTBC: UITabBarController{
   
   func setTBC() {
     //1. 연결할 스토리 보드 인스턴스 생성하기!
-    guard let redVC = self.storyboard?.instantiateViewController(withIdentifier: "RedVC"),
-          let yellowVC = self.storyboard?.instantiateViewController(withIdentifier: "YellowVC"),
-          let greenVC = self.storyboard?.instantiateViewController(withIdentifier: "GreenVC"),
-          let blueVC = self.storyboard?.instantiateViewController(withIdentifier: "BlueVC"),
-          let purpleVC = self.storyboard?.instantiateViewController(withIdentifier: "PurpleVC")
+    guard let homeVC = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC"),
+          let searchVC = self.storyboard?.instantiateViewController(withIdentifier: "SearchVC"),
+          let reelsVC = self.storyboard?.instantiateViewController(withIdentifier: "ReelsVC"),
+          let shopVC = self.storyboard?.instantiateViewController(withIdentifier: "ShopVC"),
+          let profileVC = self.storyboard?.instantiateViewController(withIdentifier: "ProfileVC")
     else {return}
     
-    redVC.tabBarItem = UITabBarItem(
+    homeVC.tabBarItem = UITabBarItem(
       title: "",
       image: UIImage(named: "icn_home"),
       selectedImage: UIImage(named: "icn_home_selected")
     )
-    yellowVC.tabBarItem = UITabBarItem(
+    searchVC.tabBarItem = UITabBarItem(
       title: "",
       image: UIImage(named: "icn_search"),
       selectedImage: UIImage(named: "icn_search_selected")
     )
-    greenVC.tabBarItem = UITabBarItem(
+    reelsVC.tabBarItem = UITabBarItem(
       title: "",
       image: UIImage(named: "icn_reels"),
       selectedImage: UIImage(named: "icn_reels_selected")
     )
-    blueVC.tabBarItem = UITabBarItem(
+    shopVC.tabBarItem = UITabBarItem(
       title: "",
       image: UIImage(named: "icn_shop"),
       selectedImage: UIImage(named: "icn_shop_selected")
     )
-    purpleVC.tabBarItem = UITabBarItem(
+    profileVC.tabBarItem = UITabBarItem(
       title: "",
       image: UIImage(named: "icn_profile")?.withRenderingMode(.alwaysOriginal),
       selectedImage: UIImage(named: "icn_profile_selected")?.withRenderingMode(.alwaysOriginal)
     )
     
-    setViewControllers([redVC,yellowVC,greenVC,blueVC,purpleVC], animated: true)
+    setViewControllers([homeVC,searchVC,reelsVC,shopVC,profileVC], animated: true)
   }
   
 }

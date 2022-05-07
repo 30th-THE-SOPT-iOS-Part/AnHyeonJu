@@ -11,7 +11,7 @@
         <!--RedVC-->
         <scene sceneID="ovW-lR-vZ8">
             <objects>
-                <viewController storyboardIdentifier="RedVC" title="RedVC" id="Nhl-4B-6cy" customClass="RedVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="HomeVC" title="RedVC" id="Nhl-4B-6cy" customClass="HomeVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="or1-2h-sM8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,7 +43,7 @@
         <!--YellowVC-->
         <scene sceneID="3Aq-Ih-10W">
             <objects>
-                <viewController storyboardIdentifier="YellowVC" title="YellowVC" id="XdG-Q9-mWc" customClass="YellowVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SearchVC" title="YellowVC" id="XdG-Q9-mWc" customClass="SearchVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uEd-6y-GvT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -59,7 +59,7 @@
         <!--GreenVC-->
         <scene sceneID="djO-ZJ-83g">
             <objects>
-                <viewController storyboardIdentifier="GreenVC" title="GreenVC" id="gPW-wY-PRO" customClass="GreenVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ReelsVC" title="GreenVC" id="gPW-wY-PRO" customClass="ReelsVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5dv-h8-JoH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,7 +75,7 @@
         <!--BlueVC-->
         <scene sceneID="krQ-lP-EEg">
             <objects>
-                <viewController storyboardIdentifier="BlueVC" title="BlueVC" id="bwG-dC-uD7" customClass="BlueVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ShopVC" title="BlueVC" id="bwG-dC-uD7" customClass="ShopVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XL0-XE-VCT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,7 +91,7 @@
         <!--PurpleVC-->
         <scene sceneID="b8T-Hn-El3">
             <objects>
-                <viewController storyboardIdentifier="PurpleVC" title="PurpleVC" id="ZAW-qv-bTG" customClass="PurpleVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ProfileVC" title="PurpleVC" id="ZAW-qv-bTG" customClass="ProfileVC" customModule="_0th_Instagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kkq-QK-KY1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
