@@ -89,6 +89,46 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F23B562B28265AC0008A1DD0 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				F2E7A2A228088A1100965A17 /* HomeVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		F23B562E28265B36008A1DD0 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				F2E7A2A428088A2700965A17 /* SearchVC.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		F23B562F28265B3F008A1DD0 /* Reels */ = {
+			isa = PBXGroup;
+			children = (
+				F2E7A2A628088A6200965A17 /* ReelsVC.swift */,
+			);
+			path = Reels;
+			sourceTree = "<group>";
+		};
+		F23B563028265B47008A1DD0 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				F2E7A2A828088A6C00965A17 /* ShopVC.swift */,
+			);
+			path = Shop;
+			sourceTree = "<group>";
+		};
+		F23B563128265B4E008A1DD0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				F2E7A2AA28088A7800965A17 /* ProfileVC.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		F275BBFC27FF5FB200145181 = {
 			isa = PBXGroup;
 			children = (
@@ -120,6 +160,11 @@
 		F275BC1C27FF630A00145181 /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				F23B563128265B4E008A1DD0 /* Profile */,
+				F23B563028265B47008A1DD0 /* Shop */,
+				F23B562F28265B3F008A1DD0 /* Reels */,
+				F23B562E28265B36008A1DD0 /* Search */,
+				F23B562B28265AC0008A1DD0 /* Home */,
 				F2E7A29D2808897E00965A17 /* TabBar */,
 				F2E7A29C2808894400965A17 /* Auth */,
 				F2FB7BB828000F3600B4CE85 /* Components */,
@@ -203,11 +248,6 @@
 			children = (
 				F2E7A29E2808899400965A17 /* TabBar.storyboard */,
 				F2E7A2A0280889E300965A17 /* InstaTBC.swift */,
-				F2E7A2A228088A1100965A17 /* HomeVC.swift */,
-				F2E7A2A428088A2700965A17 /* SearchVC.swift */,
-				F2E7A2A628088A6200965A17 /* ReelsVC.swift */,
-				F2E7A2A828088A6C00965A17 /* ShopVC.swift */,
-				F2E7A2AA28088A7800965A17 /* ProfileVC.swift */,
 			);
 			path = TabBar;
 			sourceTree = "<group>";
