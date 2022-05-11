@@ -24,6 +24,8 @@
 		F23187B3282BA5D10055691A /* UserSignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187AE282BA5D10055691A /* UserSignUpService.swift */; };
 		F23187B4282BA5D10055691A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187AF282BA5D10055691A /* LoginModel.swift */; };
 		F23187B5282BA5D10055691A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187B0282BA5D10055691A /* NetworkResult.swift */; };
+		F23187B9282BB0830055691A /* makeAlert + .swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187B8282BB0830055691A /* makeAlert + .swift */; };
+		F23187BB282BB1370055691A /* UserDefaults  + .swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187BA282BB1370055691A /* UserDefaults  + .swift */; };
 		F275BC0927FF5FB200145181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0827FF5FB200145181 /* AppDelegate.swift */; };
 		F275BC0B27FF5FB200145181 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0A27FF5FB200145181 /* SceneDelegate.swift */; };
 		F275BC0D27FF5FB200145181 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0C27FF5FB200145181 /* LoginVC.swift */; };
@@ -44,7 +46,7 @@
 		F2E7A2A928088A6C00965A17 /* ShopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2A828088A6C00965A17 /* ShopVC.swift */; };
 		F2E7A2AB28088A7800965A17 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2E7A2AA28088A7800965A17 /* ProfileVC.swift */; };
 		F2FB7BBB2800101600B4CE85 /* press + UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BBA2800101600B4CE85 /* press + UIButton.swift */; };
-		F2FB7BBD2800103A00B4CE85 /* makeAlert + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BBC2800103A00B4CE85 /* makeAlert + UIViewController.swift */; };
+		F2FB7BBD2800103A00B4CE85 /* makeVibrate + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BBC2800103A00B4CE85 /* makeVibrate + UIViewController.swift */; };
 		F2FB7BBF2800113B00B4CE85 /* getClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BBE2800113B00B4CE85 /* getClassName.swift */; };
 		F2FB7BC12800116C00B4CE85 /* keyboard + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BC02800116C00B4CE85 /* keyboard + UIViewController.swift */; };
 		F2FB7BC42800121600B4CE85 /* UICollectionViewRegisterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FB7BC32800121600B4CE85 /* UICollectionViewRegisterable.swift */; };
@@ -71,6 +73,8 @@
 		F23187AE282BA5D10055691A /* UserSignUpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignUpService.swift; sourceTree = "<group>"; };
 		F23187AF282BA5D10055691A /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		F23187B0282BA5D10055691A /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
+		F23187B8282BB0830055691A /* makeAlert + .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "makeAlert + .swift"; sourceTree = "<group>"; };
+		F23187BA282BB1370055691A /* UserDefaults  + .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults  + .swift"; sourceTree = "<group>"; };
 		F275BC0527FF5FB200145181 /* 30th_Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30th_Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F275BC0827FF5FB200145181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F275BC0A27FF5FB200145181 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,7 +97,7 @@
 		F2E7A2A828088A6C00965A17 /* ShopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopVC.swift; sourceTree = "<group>"; };
 		F2E7A2AA28088A7800965A17 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		F2FB7BBA2800101600B4CE85 /* press + UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "press + UIButton.swift"; sourceTree = "<group>"; };
-		F2FB7BBC2800103A00B4CE85 /* makeAlert + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "makeAlert + UIViewController.swift"; sourceTree = "<group>"; };
+		F2FB7BBC2800103A00B4CE85 /* makeVibrate + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "makeVibrate + UIViewController.swift"; sourceTree = "<group>"; };
 		F2FB7BBE2800113B00B4CE85 /* getClassName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getClassName.swift; sourceTree = "<group>"; };
 		F2FB7BC02800116C00B4CE85 /* keyboard + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "keyboard + UIViewController.swift"; sourceTree = "<group>"; };
 		F2FB7BC32800121600B4CE85 /* UICollectionViewRegisterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewRegisterable.swift; sourceTree = "<group>"; };
@@ -287,8 +291,10 @@
 			isa = PBXGroup;
 			children = (
 				F2FB7BBA2800101600B4CE85 /* press + UIButton.swift */,
-				F2FB7BBC2800103A00B4CE85 /* makeAlert + UIViewController.swift */,
+				F2FB7BBC2800103A00B4CE85 /* makeVibrate + UIViewController.swift */,
 				F2FB7BC02800116C00B4CE85 /* keyboard + UIViewController.swift */,
+				F23187B8282BB0830055691A /* makeAlert + .swift */,
+				F23187BA282BB1370055691A /* UserDefaults  + .swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -483,8 +489,9 @@
 				F275BC0D27FF5FB200145181 /* LoginVC.swift in Sources */,
 				F2FB7BC62800122C00B4CE85 /* UITableViewRegisterable.swift in Sources */,
 				F2FB7BBB2800101600B4CE85 /* press + UIButton.swift in Sources */,
+				F23187B9282BB0830055691A /* makeAlert + .swift in Sources */,
 				F2D7614A2801E2BB008C2B27 /* SignUpPwVC.swift in Sources */,
-				F2FB7BBD2800103A00B4CE85 /* makeAlert + UIViewController.swift in Sources */,
+				F2FB7BBD2800103A00B4CE85 /* makeVibrate + UIViewController.swift in Sources */,
 				F23187B1282BA5D10055691A /* SignUpModel.swift in Sources */,
 				F2E7A2A1280889E300965A17 /* InstaTBC.swift in Sources */,
 				F2E7A2AB28088A7800965A17 /* ProfileVC.swift in Sources */,
@@ -507,6 +514,7 @@
 				F23187AB282BA5C40055691A /* APIConstants.swift in Sources */,
 				F2D761482801E2A0008C2B27 /* SignUpNickNameVC.swift in Sources */,
 				F275BC4C27FF69CE00145181 /* ColorLiterals.swift in Sources */,
+				F23187BB282BB1370055691A /* UserDefaults  + .swift in Sources */,
 				F23187B3282BA5D10055691A /* UserSignUpService.swift in Sources */,
 				F231879F282B84930055691A /* HomeStoryCVC.swift in Sources */,
 			);
