@@ -1,5 +1,5 @@
 //
-//  BlueVC.swift
+//  YellowVC.swift
 //  30th_Instagram
 //
 //  Created by 안현주 on 2022/04/15.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BlueVC: UIViewController {
+class SearchVC: UIViewController {
   
   // MARK: - Vars & Lets Part
   

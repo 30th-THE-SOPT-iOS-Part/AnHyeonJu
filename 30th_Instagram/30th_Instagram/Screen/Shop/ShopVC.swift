@@ -1,5 +1,5 @@
 //
-//  RedVC.swift
+//  BlueVC.swift
 //  30th_Instagram
 //
 //  Created by 안현주 on 2022/04/15.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RedVC: UIViewController {
+class ShopVC: UIViewController {
   
   // MARK: - Vars & Lets Part
   
