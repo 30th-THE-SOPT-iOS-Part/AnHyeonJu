@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		50D2D474AA1F2253F62587E9 /* Pods_30th_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 808CFD3B47402B6C9B06F038 /* Pods_30th_Instagram.framework */; };
+		F2318797282B81580055691A /* HomeFeedTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2318795282B81580055691A /* HomeFeedTVC.swift */; };
+		F2318798282B81580055691A /* HomeFeedTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F2318796282B81580055691A /* HomeFeedTVC.xib */; };
+		F231879B282B816C0055691A /* HomeStoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2318799282B816C0055691A /* HomeStoryTVC.swift */; };
+		F231879C282B816C0055691A /* HomeStoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F231879A282B816C0055691A /* HomeStoryTVC.xib */; };
+		F231879F282B84930055691A /* HomeStoryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F231879D282B84930055691A /* HomeStoryCVC.swift */; };
+		F23187A0282B84930055691A /* HomeStoryCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F231879E282B84930055691A /* HomeStoryCVC.xib */; };
+		F23187A2282B85120055691A /* StoryDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187A1282B85120055691A /* StoryDataModel.swift */; };
+		F23187A5282B8D0C0055691A /* HomeFeedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187A3282B8D0C0055691A /* HomeFeedCVC.swift */; };
+		F23187A6282B8D0C0055691A /* HomeFeedCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23187A4282B8D0C0055691A /* HomeFeedCVC.xib */; };
+		F23187A8282B8D1A0055691A /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187A7282B8D1A0055691A /* FeedDataModel.swift */; };
 		F275BC0927FF5FB200145181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0827FF5FB200145181 /* AppDelegate.swift */; };
 		F275BC0B27FF5FB200145181 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0A27FF5FB200145181 /* SceneDelegate.swift */; };
 		F275BC0D27FF5FB200145181 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0C27FF5FB200145181 /* LoginVC.swift */; };
@@ -39,6 +49,16 @@
 		55183FC4FE0DC999803F4788 /* Pods-30th_Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30th_Instagram.debug.xcconfig"; path = "Target Support Files/Pods-30th_Instagram/Pods-30th_Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		808CFD3B47402B6C9B06F038 /* Pods_30th_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_30th_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D04D7EA948A79FB9DFD31237 /* Pods-30th_Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-30th_Instagram.release.xcconfig"; path = "Target Support Files/Pods-30th_Instagram/Pods-30th_Instagram.release.xcconfig"; sourceTree = "<group>"; };
+		F2318795282B81580055691A /* HomeFeedTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedTVC.swift; sourceTree = "<group>"; };
+		F2318796282B81580055691A /* HomeFeedTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFeedTVC.xib; sourceTree = "<group>"; };
+		F2318799282B816C0055691A /* HomeStoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryTVC.swift; sourceTree = "<group>"; };
+		F231879A282B816C0055691A /* HomeStoryTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStoryTVC.xib; sourceTree = "<group>"; };
+		F231879D282B84930055691A /* HomeStoryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeStoryCVC.swift; sourceTree = "<group>"; };
+		F231879E282B84930055691A /* HomeStoryCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeStoryCVC.xib; sourceTree = "<group>"; };
+		F23187A1282B85120055691A /* StoryDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryDataModel.swift; sourceTree = "<group>"; };
+		F23187A3282B8D0C0055691A /* HomeFeedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCVC.swift; sourceTree = "<group>"; };
+		F23187A4282B8D0C0055691A /* HomeFeedCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFeedCVC.xib; sourceTree = "<group>"; };
+		F23187A7282B8D1A0055691A /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
 		F275BC0527FF5FB200145181 /* 30th_Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30th_Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F275BC0827FF5FB200145181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F275BC0A27FF5FB200145181 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,9 +109,35 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		F2318793282B81300055691A /* Story */ = {
+			isa = PBXGroup;
+			children = (
+				F2318799282B816C0055691A /* HomeStoryTVC.swift */,
+				F231879A282B816C0055691A /* HomeStoryTVC.xib */,
+				F231879D282B84930055691A /* HomeStoryCVC.swift */,
+				F231879E282B84930055691A /* HomeStoryCVC.xib */,
+				F23187A1282B85120055691A /* StoryDataModel.swift */,
+			);
+			path = Story;
+			sourceTree = "<group>";
+		};
+		F2318794282B81350055691A /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				F2318795282B81580055691A /* HomeFeedTVC.swift */,
+				F2318796282B81580055691A /* HomeFeedTVC.xib */,
+				F23187A3282B8D0C0055691A /* HomeFeedCVC.swift */,
+				F23187A4282B8D0C0055691A /* HomeFeedCVC.xib */,
+				F23187A7282B8D1A0055691A /* FeedDataModel.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
 		F23B562B28265AC0008A1DD0 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				F2318794282B81350055691A /* Feed */,
+				F2318793282B81300055691A /* Story */,
 				F2E7A2A228088A1100965A17 /* HomeVC.swift */,
 			);
 			path = Home;
@@ -346,9 +392,13 @@
 			files = (
 				F2E7A29F2808899400965A17 /* TabBar.storyboard in Resources */,
 				F275BC1527FF5FB500145181 /* LaunchScreen.storyboard in Resources */,
+				F231879C282B816C0055691A /* HomeStoryTVC.xib in Resources */,
 				F275BC5A27FF6B8700145181 /* Colors.xcassets in Resources */,
 				F275BC1227FF5FB500145181 /* Assets.xcassets in Resources */,
+				F2318798282B81580055691A /* HomeFeedTVC.xib in Resources */,
+				F23187A6282B8D0C0055691A /* HomeFeedCVC.xib in Resources */,
 				F275BC1027FF5FB200145181 /* Main.storyboard in Resources */,
+				F23187A0282B84930055691A /* HomeStoryCVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +451,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F231879B282B816C0055691A /* HomeStoryTVC.swift in Sources */,
+				F23187A8282B8D1A0055691A /* FeedDataModel.swift in Sources */,
+				F23187A5282B8D0C0055691A /* HomeFeedCVC.swift in Sources */,
 				F275BC0D27FF5FB200145181 /* LoginVC.swift in Sources */,
 				F2FB7BC62800122C00B4CE85 /* UITableViewRegisterable.swift in Sources */,
 				F2FB7BBB2800101600B4CE85 /* press + UIButton.swift in Sources */,
@@ -411,8 +464,10 @@
 				F2D7614C2801E2CE008C2B27 /* WelcomeVC.swift in Sources */,
 				F2FB7BC12800116C00B4CE85 /* keyboard + UIViewController.swift in Sources */,
 				F275BC0927FF5FB200145181 /* AppDelegate.swift in Sources */,
+				F23187A2282B85120055691A /* StoryDataModel.swift in Sources */,
 				F2FB7BBF2800113B00B4CE85 /* getClassName.swift in Sources */,
 				F2E7A2A328088A1100965A17 /* HomeVC.swift in Sources */,
+				F2318797282B81580055691A /* HomeFeedTVC.swift in Sources */,
 				F2E7A2A528088A2700965A17 /* SearchVC.swift in Sources */,
 				F2E7A2A728088A6200965A17 /* ReelsVC.swift in Sources */,
 				F275BC0B27FF5FB200145181 /* SceneDelegate.swift in Sources */,
@@ -421,6 +476,7 @@
 				F2E7A2A928088A6C00965A17 /* ShopVC.swift in Sources */,
 				F2D761482801E2A0008C2B27 /* SignUpNickNameVC.swift in Sources */,
 				F275BC4C27FF69CE00145181 /* ColorLiterals.swift in Sources */,
+				F231879F282B84930055691A /* HomeStoryCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

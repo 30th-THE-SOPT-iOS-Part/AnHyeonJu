@@ -9,9 +9,17 @@ import UIKit
 
 class HomeStoryCVC: UICollectionViewCell {
 
-    override func awakeFromNib() {
+  @IBOutlet weak var storyImageView: UIImageView!
+  @IBOutlet weak var storyNameLabel: UILabel!
+  
+  override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+  
+  func setData( storyData: StoryDataModel) {
+    storyImageView.image = storyData.storyImage
+    storyNameLabel.text = storyData.storyName
+  }
 
 }
