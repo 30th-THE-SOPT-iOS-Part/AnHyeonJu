@@ -1,9 +1,4 @@
-//
-//  UserSignService.swift
-//  Youtube-Clone
-//
-//  Created by 안현주 on 2021/11/06.
-//
+
 
 import Foundation
 import Alamofire
@@ -14,7 +9,8 @@ struct UserLoginService {
     static let shared = UserLoginService()
     
     //로그인 통신 할 함수 정의
-    func login(email: String,
+    func login(name: String,
+               email: String,
                password: String,
                completion: @escaping (NetworkResult<Any>) -> (Void)) {
         
@@ -28,6 +24,7 @@ struct UserLoginService {
         
         //요청 바디
         let body: Parameters = [
+            "name": name,
             "email": email,
             "password": password
         ]

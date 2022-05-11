@@ -58,6 +58,13 @@ class WelcomeVC: UIViewController {
     }
   }
   
+//  func setNameInLabel() {
+//      if let user = UserDefaults.standard.string(forKey: UserDefaults.Keys.loginUserName) {
+//          nameLabel.text = "\(user)님 환영합니다!"
+//          nameLabel.sizeToFit()
+//      }
+//  }
+  
   // MARK: - @objc Function Part
   
 }

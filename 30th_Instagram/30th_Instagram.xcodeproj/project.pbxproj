@@ -18,6 +18,12 @@
 		F23187A5282B8D0C0055691A /* HomeFeedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187A3282B8D0C0055691A /* HomeFeedCVC.swift */; };
 		F23187A6282B8D0C0055691A /* HomeFeedCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F23187A4282B8D0C0055691A /* HomeFeedCVC.xib */; };
 		F23187A8282B8D1A0055691A /* FeedDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187A7282B8D1A0055691A /* FeedDataModel.swift */; };
+		F23187AB282BA5C40055691A /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187AA282BA5C40055691A /* APIConstants.swift */; };
+		F23187B1282BA5D10055691A /* SignUpModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187AC282BA5D00055691A /* SignUpModel.swift */; };
+		F23187B2282BA5D10055691A /* UserLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187AD282BA5D00055691A /* UserLoginService.swift */; };
+		F23187B3282BA5D10055691A /* UserSignUpService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187AE282BA5D10055691A /* UserSignUpService.swift */; };
+		F23187B4282BA5D10055691A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187AF282BA5D10055691A /* LoginModel.swift */; };
+		F23187B5282BA5D10055691A /* NetworkResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = F23187B0282BA5D10055691A /* NetworkResult.swift */; };
 		F275BC0927FF5FB200145181 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0827FF5FB200145181 /* AppDelegate.swift */; };
 		F275BC0B27FF5FB200145181 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0A27FF5FB200145181 /* SceneDelegate.swift */; };
 		F275BC0D27FF5FB200145181 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F275BC0C27FF5FB200145181 /* LoginVC.swift */; };
@@ -59,6 +65,12 @@
 		F23187A3282B8D0C0055691A /* HomeFeedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeFeedCVC.swift; sourceTree = "<group>"; };
 		F23187A4282B8D0C0055691A /* HomeFeedCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeFeedCVC.xib; sourceTree = "<group>"; };
 		F23187A7282B8D1A0055691A /* FeedDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataModel.swift; sourceTree = "<group>"; };
+		F23187AA282BA5C40055691A /* APIConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		F23187AC282BA5D00055691A /* SignUpModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpModel.swift; sourceTree = "<group>"; };
+		F23187AD282BA5D00055691A /* UserLoginService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserLoginService.swift; sourceTree = "<group>"; };
+		F23187AE282BA5D10055691A /* UserSignUpService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserSignUpService.swift; sourceTree = "<group>"; };
+		F23187AF282BA5D10055691A /* LoginModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		F23187B0282BA5D10055691A /* NetworkResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkResult.swift; sourceTree = "<group>"; };
 		F275BC0527FF5FB200145181 /* 30th_Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = 30th_Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F275BC0827FF5FB200145181 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F275BC0A27FF5FB200145181 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -131,6 +143,19 @@
 				F23187A7282B8D1A0055691A /* FeedDataModel.swift */,
 			);
 			path = Feed;
+			sourceTree = "<group>";
+		};
+		F23187A9282BA4D60055691A /* Server */ = {
+			isa = PBXGroup;
+			children = (
+				F23187AA282BA5C40055691A /* APIConstants.swift */,
+				F23187B0282BA5D10055691A /* NetworkResult.swift */,
+				F23187AF282BA5D10055691A /* LoginModel.swift */,
+				F23187AC282BA5D00055691A /* SignUpModel.swift */,
+				F23187AD282BA5D00055691A /* UserLoginService.swift */,
+				F23187AE282BA5D10055691A /* UserSignUpService.swift */,
+			);
+			path = Server;
 			sourceTree = "<group>";
 		};
 		F23B562B28265AC0008A1DD0 /* Home */ = {
@@ -221,6 +246,7 @@
 		F275BC1D27FF631C00145181 /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				F23187A9282BA4D60055691A /* Server */,
 				F275BC2527FF641400145181 /* Supporting Files */,
 				F275BC2027FF63EF00145181 /* Utils */,
 				F275BC2127FF63F600145181 /* Literals */,
@@ -459,6 +485,7 @@
 				F2FB7BBB2800101600B4CE85 /* press + UIButton.swift in Sources */,
 				F2D7614A2801E2BB008C2B27 /* SignUpPwVC.swift in Sources */,
 				F2FB7BBD2800103A00B4CE85 /* makeAlert + UIViewController.swift in Sources */,
+				F23187B1282BA5D10055691A /* SignUpModel.swift in Sources */,
 				F2E7A2A1280889E300965A17 /* InstaTBC.swift in Sources */,
 				F2E7A2AB28088A7800965A17 /* ProfileVC.swift in Sources */,
 				F2D7614C2801E2CE008C2B27 /* WelcomeVC.swift in Sources */,
@@ -467,15 +494,20 @@
 				F23187A2282B85120055691A /* StoryDataModel.swift in Sources */,
 				F2FB7BBF2800113B00B4CE85 /* getClassName.swift in Sources */,
 				F2E7A2A328088A1100965A17 /* HomeVC.swift in Sources */,
+				F23187B2282BA5D10055691A /* UserLoginService.swift in Sources */,
 				F2318797282B81580055691A /* HomeFeedTVC.swift in Sources */,
 				F2E7A2A528088A2700965A17 /* SearchVC.swift in Sources */,
+				F23187B4282BA5D10055691A /* LoginModel.swift in Sources */,
 				F2E7A2A728088A6200965A17 /* ReelsVC.swift in Sources */,
 				F275BC0B27FF5FB200145181 /* SceneDelegate.swift in Sources */,
+				F23187B5282BA5D10055691A /* NetworkResult.swift in Sources */,
 				F2FB7BC42800121600B4CE85 /* UICollectionViewRegisterable.swift in Sources */,
 				F275BC5027FF6A3C00145181 /* ImageLiterals.swift in Sources */,
 				F2E7A2A928088A6C00965A17 /* ShopVC.swift in Sources */,
+				F23187AB282BA5C40055691A /* APIConstants.swift in Sources */,
 				F2D761482801E2A0008C2B27 /* SignUpNickNameVC.swift in Sources */,
 				F275BC4C27FF69CE00145181 /* ColorLiterals.swift in Sources */,
+				F23187B3282BA5D10055691A /* UserSignUpService.swift in Sources */,
 				F231879F282B84930055691A /* HomeStoryCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

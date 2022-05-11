@@ -103,3 +103,39 @@ class LoginVC: UIViewController, UITextFieldDelegate {
   
 }
 // MARK: - Extension Part
+//🌱UserDeFaults 사용
+//extension LoginVC {
+//    func requestLogin() {
+//        UserLoginService.shared.login(email: emailTextField.text ?? "",
+//                                      password: passwordTextField.text ?? "") { [self] responseData in
+//            switch  responseData {
+//            case .success(let loginResponse):
+//                guard let response = loginResponse as? LoginResponseData else { return }
+//                if response.data != nil {
+//                    UserDefaults.standard.set(self.nameTextField.text, forKey: UserDefaults.Keys.loginUserName)
+//                    self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+//                        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+//                        welcomeVC.modalPresentationStyle = .fullScreen
+//                        self.present(welcomeVC, animated: true, completion: nil)
+//                    })
+//                }
+//            case .requestErr(let loginResponse):
+//                print("requestERR \(loginResponse)")
+//                guard let response = loginResponse as? LoginResponseData else { return }
+//                self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+//                    setTextFieldEmpty()
+//                })
+//            case .pathErr(let loginResponse):
+//                print("pathErr")
+//                guard let response = loginResponse as? LoginResponseData else { return }
+//                self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+//                    self.setTextFieldEmpty()
+//                })
+//            case .serverErr:
+//                print("serverErr")
+//            case .networkFail:
+//                print("networkFail")
+//            }
+//        }
+//    }
+//}

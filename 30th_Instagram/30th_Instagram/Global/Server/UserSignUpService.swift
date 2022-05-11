@@ -1,9 +1,3 @@
-//
-//  UserSignService.swift
-//  Youtube-Clone
-//
-//  Created by 안현주 on 2021/11/06.
-//
 
 import Foundation
 import Alamofire
@@ -14,8 +8,8 @@ struct UserSignUpService {
     static let shared = UserSignUpService()
     
     //회원가입때 통신 할 함수 정의
-    func signUp(email: String,
-                name: String,
+    func signUp(name: String,
+                email: String,
                password: String,
                completion: @escaping (NetworkResult<Any>) -> (Void)) {
         
@@ -29,8 +23,8 @@ struct UserSignUpService {
         
         //요청 바디
         let body: Parameters = [
+          "name" : name,
             "email": email,
-            "name" : name,
             "password": password
         ]
         
