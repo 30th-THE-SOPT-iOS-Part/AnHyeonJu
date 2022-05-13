@@ -9,8 +9,7 @@ struct UserLoginService {
     static let shared = UserLoginService()
     
     //로그인 통신 할 함수 정의
-    func login(name: String,
-               email: String,
+    func login(email: String,
                password: String,
                completion: @escaping (NetworkResult<Any>) -> (Void)) {
         
@@ -24,7 +23,6 @@ struct UserLoginService {
         
         //요청 바디
         let body: Parameters = [
-            "name": name,
             "email": email,
             "password": password
         ]
@@ -54,8 +52,8 @@ struct UserLoginService {
     //서버통신 자체는 성공일지라도 응답 실패로 우리가 원하는 데이터를 받지 못한 상태일 때를 분기 처리하기위한 함수
     private func judgeLoginStatus(by statusCode: Int, _ data: Data) -> NetworkResult<Any> {
         switch statusCode {
-        case 200: return isValidLoginData(data: data)
-        case 400: return isUsedPathErrData(data: data)
+        case 200...201: return isValidLoginData(data: data) //Created - status, message, data
+        case 400...409: return isUsedPathErrData(data: data) // Duplicate - 이미 존재하는 유저
         case 500: return .serverErr
         default: return .networkFail
         }

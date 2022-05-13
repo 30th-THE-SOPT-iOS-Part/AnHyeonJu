@@ -10,7 +10,7 @@ import UIKit
 class LoginVC: UIViewController, UITextFieldDelegate {
   
   // MARK: - Vars & Lets Part
-
+  
   // MARK: - UI Component Part
   @IBOutlet weak var idTextField: UITextField!
   @IBOutlet weak var pwTextField: UITextField!
@@ -22,6 +22,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
+    btnEnabled()
     initialize()
   }
   
@@ -31,7 +32,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     pressBtn()
     setTextField()
     hideKeyboard()
-    requestLogin()
   }
   
   // MARK: - IBAction Part
@@ -50,10 +50,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
   }
   
-  private func initialize() {
+  private func btnEnabled(){
     loginBtn.isEnabled = false
     loginBtn.backgroundColor = UIColor(displayP3Red: 149/255, green: 200/255, blue: 248/255, alpha: 1)
-
+  }
+  
+  private func initialize() {
     [idTextField, pwTextField].forEach {
       $0.text = ""
     }
@@ -62,11 +64,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
   private func pressBtn() {
     //Present
     loginBtn.press {
-      guard let welcomeVC =  self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
-      
-      welcomeVC.userName = self.idTextField.text
-      welcomeVC.modalPresentationStyle = .fullScreen
-      self.present(welcomeVC, animated: true, completion: nil)
+      self.requestLogin()
     }
     
     //Push
@@ -106,39 +104,55 @@ class LoginVC: UIViewController, UITextFieldDelegate {
 // MARK: - Extension Part
 //🌱UserDeFaults 사용
 extension LoginVC {
-    func requestLogin() {
-      UserLoginService.shared.login(name: idTextField.text ?? "", email: idTextField.text ?? "",
-                                      password: pwTextField.text ?? "") { [self] responseData in
-            switch  responseData {
-            case .success(let loginResponse):
-                guard let response = loginResponse as? LoginResponseData else { return }
-                if response.data != nil {
-                  
-                    UserDefaults.standard.set(self.idTextField.text, forKey: UserDefaults.Keys.loginUserName)
-//                  UserDefaults.standard.set(response.data?.name, forKey: UserDefaults.Keys.loginUserName)
-                    self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
-                        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
-                        welcomeVC.modalPresentationStyle = .fullScreen
-                        self.present(welcomeVC, animated: true, completion: nil)
-                    })
-                }
-            case .requestErr(let loginResponse):
-                print("requestERR \(loginResponse)")
-                guard let response = loginResponse as? LoginResponseData else { return }
-                self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
-                  self.initialize()
-                })
-            case .pathErr(let loginResponse):
-                print("pathErr")
-                guard let response = loginResponse as? LoginResponseData else { return }
-                self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
-                    self.initialize()
-                })
-            case .serverErr:
-                print("serverErr")
-            case .networkFail:
-                print("networkFail")
-            }
+  func requestLogin() {
+    UserLoginService.shared.login(email: idTextField.text ?? "",
+                                  password: pwTextField.text ?? "") { [self] responseData in
+      switch  responseData {
+      case .success(let loginResponse):
+        guard let response = loginResponse as? LoginResponseData else { return }
+        if response.data != nil {
+          
+          UserDefaults.standard.set(self.idTextField.text, forKey: UserDefaults.Keys.loginUserName)
+          //                  UserDefaults.standard.set(response.data?.name, forKey: UserDefaults.Keys.loginUserName)
+          self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+            guard let welcomeVC =  self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+            
+            //      welcomeVC.userName = self.idTextField.text
+            welcomeVC.modalPresentationStyle = .fullScreen
+            self.present(welcomeVC, animated: true, completion: nil)
+          })
+          
+          
         }
+      case .requestErr(let loginResponse):
+        print("requestERR \(loginResponse)")
+        guard let response = loginResponse as? LoginResponseData else { return }
+        self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+          self.initialize()
+          self.btnEnabled()
+        })
+      case .pathErr(let loginResponse):
+        print("pathErr")
+        guard let response = loginResponse as? LoginResponseData else { return }
+        self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+          self.initialize()
+          self.btnEnabled()
+        })
+      case .serverErr:
+        print("serverErr")
+      case .networkFail:
+        print("networkFail")
+      }
     }
+  }
 }
+//case .success(let loginResponse):
+//                guard let response = loginResponse as? LoginResponseData else { return }
+//                if response.data != nil {
+//                    UserDefaults.standard.set(self.nameTextField.text, forKey: UserDefaults.Keys.loginUserName)
+//                    self.makeAlert(title: "로그인", message: response.message, okAction: { _ in
+//                        guard let welcomeVC = self.storyboard?.instantiateViewController(withIdentifier: "WelcomeVC") as? WelcomeVC else {return}
+//                        welcomeVC.modalPresentationStyle = .fullScreen
+//                        self.present(welcomeVC, animated: true, completion: nil)
+//                    })
+//                }
