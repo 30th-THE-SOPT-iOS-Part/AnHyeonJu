@@ -128,10 +128,8 @@
 		F2318793282B81300055691A /* Story */ = {
 			isa = PBXGroup;
 			children = (
-				F2318799282B816C0055691A /* HomeStoryTVC.swift */,
-				F231879A282B816C0055691A /* HomeStoryTVC.xib */,
-				F231879D282B84930055691A /* HomeStoryCVC.swift */,
-				F231879E282B84930055691A /* HomeStoryCVC.xib */,
+				F2A64B23282F8B11002B8313 /* StoryBoard */,
+				F2A64B22282F8B04002B8313 /* VC */,
 				F23187A1282B85120055691A /* StoryDataModel.swift */,
 			);
 			path = Story;
@@ -307,6 +305,24 @@
 				F275BC1327FF5FB500145181 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F2A64B22282F8B04002B8313 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				F2318799282B816C0055691A /* HomeStoryTVC.swift */,
+				F231879D282B84930055691A /* HomeStoryCVC.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
+		F2A64B23282F8B11002B8313 /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F231879A282B816C0055691A /* HomeStoryTVC.xib */,
+				F231879E282B84930055691A /* HomeStoryCVC.xib */,
+			);
+			path = StoryBoard;
 			sourceTree = "<group>";
 		};
 		F2E7A29C2808894400965A17 /* Auth */ = {

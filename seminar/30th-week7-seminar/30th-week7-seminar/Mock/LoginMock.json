@@ -1,0 +1,17 @@
+/* 
+  LoginMock.json
+  30th-week7-seminar
+
+  Created by 안현주 on 2022/05/28.
+  
+*/
+
+{
+  "status" : 200,
+  "success" : true,
+  "message" : "로그인 성공",
+  "data" : {
+    "name" : "김태현",
+    "email" : "iOS@sopt.org"
+  }
+}
